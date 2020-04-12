@@ -1,0 +1,219 @@
+{
+    "webServer":{
+        "http":{"port":8189}
+    },
+    "limites":{
+        "w":-130.0, "e":-20.0,
+        "s":-75.0, "n":30.0
+    },
+    "copernicusAuth":{
+        "user":"jjimenez",
+        "pwd":"Pomeo.123"
+    },
+    "dataPath":"/Volumes/JSamsung/geoportal/copernicus/data",
+    "dataPath_bak":"/home/data",
+    "publishPath":"/Volumes/JSamsung/geoportal/copernicus/publish",
+    "publishPath_bak":"/home/publish",
+    "productos":[
+        {
+            "codigo":"CHL_L4",
+            "temporalidad":"dia-anterior",
+            "url":"http://nrt.cmems-du.eu/motu-web/Motu",
+            "serviceId":"OCEANCOLOUR_GLO_CHL_L4_NRT_OBSERVATIONS_009_033-TDS",
+            "productId":"dataset-oc-glo-bio-multi-l4-chl_interpolated_4km_daily-rt",
+            "variables":[{
+                "codigo":"CHL",
+                "nombre":"Clorofila A (L4)",
+                "grupos":["biologia-marina"],
+                "unidad":"mg/m3",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/clorofila.svg",
+                "decimales":2,
+                "visualizadoresIniciales":{
+                    "shader":{
+                        "escala":{"dinamica":true, "nombre":"zeu - NASA OceanColor"}
+                    }
+                }
+            }, {
+                "codigo":"CHL_error",
+                "nombre":"Clorofila A (L4) - Error Estimado",
+                "grupos":["biologia-marina"],
+                "unidad":"%",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/clorofila.svg",
+                "decimales":2
+            }]
+        }, {
+            "codigo":"SST_L4",
+            "temporalidad":"dia-anterior-12",
+            "url":"http://nrt.cmems-du.eu/motu-web/Motu",
+            "serviceId":"SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001-TDS",
+            "productId":"METOFFICE-GLO-SST-L4-NRT-OBS-ANOM-V2",
+            "variables":[{
+                "codigo":"analysed_sst",
+                "nombre":"Temperatura Superficial Océano",
+                "grupos":["oceanografia"],
+                "unidad":"ºC",
+                "transformer":"K=>C",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/temperatura.svg",
+                "decimales":2,
+                "visualizadoresIniciales":{
+                    "shader":{
+                        "escala":{"dinamica":true, "nombre":"sst - NASA OceanColor"}
+                    },
+                    "isolineas":{
+                        "autostep":true
+                    }
+                }
+            }, {
+                "codigo":"sst_anomaly",
+                "nombre":"Temperatura Superficial Océano (Anomalía)",
+                "grupos":["oceanografia"],
+                "unidad":"ºC",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/temperatura.svg",
+                "decimales":2
+            }]
+        }, {
+            "codigo":"PHY_L4",
+            "temporalidad":"dia-anterior",
+            "url":"http://nrt.cmems-du.eu/motu-web/Motu",
+            "serviceId":"SEALEVEL_GLO_PHY_L4_NRT_OBSERVATIONS_008_046-TDS",
+            "productId":"dataset-duacs-nrt-global-merged-allsat-phy-l4",
+            "variables":[{
+                "codigo":"adt",
+                "nombre":"Absolute Dynamic Topography",
+                "grupos":["oceanografia"],
+                "unidad":"m",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/altura.svg",
+                "decimales":2,
+                "visualizadoresIniciales":{
+                    "shader":{
+                        "escala":{"dinamica":true, "nombre":"SAGA - 05"}
+                    },
+                    "isolineas":{
+                        "autostep":true
+                    }
+                }
+            }, {
+                "codigo":"err",
+                "nombre":"ADT - Formal Mapping Error",
+                "grupos":["oceanografia"],
+                "unidad":"m",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/error.svg",
+                "decimales":2
+            }, {
+                "codigo":"err_ugosa",
+                "nombre":"GOS - U Component-Formal Mapping Error",
+                "grupos":["oceanografia"],
+                "unidad":"m/s",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/error.svg",
+                "decimales":2
+            }, {
+                "codigo":"err_vgosa",
+                "nombre":"GOS - V Component-Formal Mapping Error",
+                "grupos":["oceanografia"],
+                "unidad":"m/s",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/error.svg",
+                "decimales":2
+            }, {
+                "codigo":"sla",
+                "nombre":"Sea Level Anomaly",
+                "grupos":["oceanografia"],
+                "unidad":"m",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/anomalia.svg",
+                "decimales":2
+            }, {
+                "codigo":"ugos",
+                "nombre":"Absolute Geostrophic Velocity - U Component",
+                "grupos":["oceanografia"],
+                "unidad":"m/s",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/velocidad.svg",
+                "decimales":2
+            }, {
+                "codigo":"ugosa",
+                "nombre":"GOS Anomaly - U Component",
+                "grupos":["oceanografia"],
+                "unidad":"m/s",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/anomalia.svg",
+                "decimales":2
+            }, {
+                "codigo":"vgos",
+                "nombre":"Absolute Geostrophic Velocity - V Component",
+                "grupos":["oceanografia"],
+                "unidad":"m/s",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/velocidad.svg",
+                "decimales":2
+            }, {
+                "codigo":"vgosa",
+                "nombre":"GOS Anomaly - V Component",
+                "grupos":["oceanografia"],
+                "unidad":"m/s",
+                "nivelInicial":0,
+                "niveles":[{
+                    "descripcion":"Superficie"
+                }],
+                "icono":"img/variables/anomalia.svg",
+                "decimales":2
+            }]
+        }
+    ],
+    "vectores":[{
+        "codigo":"gos",
+        "nombre":"Absolute Geostrophic Velocity - Vector",
+        "vector":{"capaU":"ugos", "capaV":"vgos"},
+        "grupos":["oceanografia"],
+        "unidad":"m/s",
+        "nivelInicial":0,
+        "niveles":[{
+            "descripcion":"Superficie"
+        }],
+        "icono":"img/variables/velocidad.svg",
+        "decimales":2
+    }]
+}

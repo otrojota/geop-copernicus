@@ -1,0 +1,29 @@
+{
+  "name": "geop-copernicus",
+  "version": "1.0.0",
+  "description": "Proveedor de Capas Geoportal desde Copernicus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otrojota/geop-copernicus.git"
+  },
+  "keywords": [
+    "geoportal",
+    "copernicus",
+    "pomeo"
+  ],
+  "author": "Jota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otrojota/geop-copernicus/issues"
+  },
+  "homepage": "https://github.com/otrojota/geop-copernicus#readme",
+  "dependencies": {
+    "geop-base-proveedor-capas": "git+https://github.com/otrojota/geop-base-proveedor-capas.git",
+    "moment-timezone": "^0.5.28",
+    "pngjs": "^4.0.0"
+  }
+}
