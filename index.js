@@ -40,10 +40,28 @@ async function importCHL() {
     const config = require("./lib/Config").getConfig();
     let time = moment.tz("UTC");
     time.hours(0); time.minutes(0); time.seconds(0);
-    time = time.subtract(1, "days");
-    let producto = config.productos.find(p => p.codigo == "CHL_L4");
+    //time = time.subtract(1, "days");
+    let productos = [
+        config.productos.find(p => p.codigo == "CHL_L4"),
+        config.productos.find(p => p.codigo == "SST_L4"),
+        config.productos.find(p => p.codigo == "PHY_L4")
+    ];
     while (true) {
-        await downloader.descargaProducto(producto, {}, time);
+        for (let i=0; i<productos.length; i++) {
+            let nTries = 0, success = false;        
+            do {
+                try {
+                    console.log("Producto: " + productos[i].codigo + ". Intento: " + (nTries + 1));
+                    await downloader.descargaProducto(productos[i], {}, time);
+                    console.log("  => OK");
+                    success = true;
+                } catch(error) {
+                    console.error(error);
+                    success = false;
+                }
+            } while(!success && ++nTries < 5);
+        }
+
         time = time.subtract(1, "days");
     }
 }

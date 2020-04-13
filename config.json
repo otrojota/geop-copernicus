@@ -10,10 +10,10 @@
         "user":"jjimenez",
         "pwd":"Pomeo.123"
     },
-    "dataPath":"/Volumes/JSamsung/geoportal/copernicus/data",
-    "dataPath_bak":"/home/data",
-    "publishPath":"/Volumes/JSamsung/geoportal/copernicus/publish",
-    "publishPath_bak":"/home/publish",
+    "dataPath_bak":"/Volumes/JSamsung/geoportal/copernicus/data",
+    "dataPath":"/home/data",
+    "publishPath_bak":"/Volumes/JSamsung/geoportal/copernicus/publish",
+    "publishPath":"/home/publish",
     "productos":[
         {
             "codigo":"CHL_L4",
@@ -24,7 +24,7 @@
             "variables":[{
                 "codigo":"CHL",
                 "nombre":"Clorofila A (L4)",
-                "grupos":["biologia-marina"],
+                "grupos":["clorofila"],
                 "unidad":"mg/m3",
                 "nivelInicial":0,
                 "niveles":[{
@@ -40,7 +40,7 @@
             }, {
                 "codigo":"CHL_error",
                 "nombre":"Clorofila A (L4) - Error Estimado",
-                "grupos":["biologia-marina"],
+                "grupos":["clorofila"],
                 "unidad":"%",
                 "nivelInicial":0,
                 "niveles":[{
@@ -214,6 +214,60 @@
             "descripcion":"Superficie"
         }],
         "icono":"img/variables/velocidad.svg",
-        "decimales":2
+        "decimales":2,
+        "visualizadoresIniciales":{
+            "particulas":{
+                "escala":{"dinamica":true, "nombre":"Magma - MatplotLib"},
+                "nParticulas":30000,
+                "velocidad":15
+            },
+            "vectores":{
+                "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+            }
+        }
+    }, {
+        "codigo":"gosa",
+        "nombre":"GOS Anomaly - Vector",
+        "vector":{"capaU":"ugosa", "capaV":"vgosa"},
+        "grupos":["oceanografia"],
+        "unidad":"m/s",
+        "nivelInicial":0,
+        "niveles":[{
+            "descripcion":"Superficie"
+        }],
+        "icono":"img/variables/anomalia.svg",
+        "decimales":2,
+        "visualizadoresIniciales":{
+            "particulas":{
+                "escala":{"dinamica":true, "nombre":"Magma - MatplotLib"},
+                "nParticulas":30000,
+                "velocidad":15
+            },
+            "vectores":{
+                "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+            }
+        }
+    }, {
+        "codigo":"err_gosa",
+        "nombre":"GOS - Formal Mapping Error - Vector",
+        "vector":{"capaU":"err_ugosa", "capaV":"err_vgosa"},
+        "grupos":["oceanografia"],
+        "unidad":"m/s",
+        "nivelInicial":0,
+        "niveles":[{
+            "descripcion":"Superficie"
+        }],
+        "icono":"img/variables/anomalia.svg",
+        "decimales":2,
+        "visualizadoresIniciales":{
+            "particulas":{
+                "escala":{"dinamica":true, "nombre":"Magma - MatplotLib"},
+                "nParticulas":30000,
+                "velocidad":15
+            },
+            "vectores":{
+                "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
+            }
+        }
     }]
 }
