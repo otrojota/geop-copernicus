@@ -10,10 +10,10 @@
         "user":"jjimenez",
         "pwd":"Pomeo.123"
     },
-    "dataPath_bak":"/Volumes/JSamsung/geoportal/copernicus/data",
-    "dataPath":"/home/data",
-    "publishPath_bak":"/Volumes/JSamsung/geoportal/copernicus/publish",
-    "publishPath":"/home/publish",
+    "dataPath":"/Volumes/JSamsung/geoportal/copernicus/data",
+    "dataPath_bak":"/home/data",
+    "publishPath":"/Volumes/JSamsung/geoportal/copernicus/publish",
+    "publishPath_bak":"/home/publish",
     "productos":[
         {
             "codigo":"CHL_L4",
