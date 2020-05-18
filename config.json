@@ -10,10 +10,10 @@
         "user":"jjimenez",
         "pwd":"Pomeo.123"
     },
-    "dataPath":"/Users/jota/proyectos/PUCV/geoportal/data/copernicus/data",
-    "dataPath_bak":"/home/data",
-    "publishPath":"/Users/jota/proyectos/PUCV/geoportal/data/copernicus/publish",
-    "publishPath_bak":"/home/publish",
+    "dataPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/copernicus/data",
+    "dataPath":"/home/data",
+    "publishPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/copernicus/publish",
+    "publishPath":"/home/publish",
     "productos":[
         {
             "codigo":"CHL_L4",
