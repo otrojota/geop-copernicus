@@ -10,10 +10,10 @@
         "user":"jjimenez",
         "pwd":"Pomeo.123"
     },
-    "dataPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/copernicus/data",
-    "dataPath":"/home/data",
-    "publishPath_bak":"/Users/jota/proyectos/PUCV/geoportal/data/copernicus/publish",
-    "publishPath":"/home/publish",
+    "dataPath":"/Users/jota/proyectos/PUCV/geoportal/data/copernicus/data",
+    "dataPath_bak":"/home/data",
+    "publishPath":"/Users/jota/proyectos/PUCV/geoportal/data/copernicus/publish",
+    "publishPath_bak":"/home/publish",
     "productos":[
         {
             "codigo":"CHL_L4",
@@ -218,8 +218,8 @@
         "visualizadoresIniciales":{
             "particulas":{
                 "escala":{"dinamica":true, "nombre":"Magma - MatplotLib"},
-                "nParticulas":30000,
-                "velocidad":15
+                "nParticulas":300,
+                "velocidad":0.7
             },
             "vectores":{
                 "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
@@ -240,8 +240,8 @@
         "visualizadoresIniciales":{
             "particulas":{
                 "escala":{"dinamica":true, "nombre":"Magma - MatplotLib"},
-                "nParticulas":30000,
-                "velocidad":15
+                "nParticulas":300,
+                "velocidad":0.7
             },
             "vectores":{
                 "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
@@ -262,8 +262,8 @@
         "visualizadoresIniciales":{
             "particulas":{
                 "escala":{"dinamica":true, "nombre":"Magma - MatplotLib"},
-                "nParticulas":30000,
-                "velocidad":15
+                "nParticulas":300,
+                "velocidad":0.7
             },
             "vectores":{
                 "escala":{"dinamica":true, "nombre":"Color Fijo: Negro"}
