@@ -23,7 +23,7 @@
   "homepage": "https://github.com/otrojota/geop-copernicus#readme",
   "dependencies": {
     "geop-base-proveedor-capas": "git+https://github.com/otrojota/geop-base-proveedor-capas.git",
-    "moment-timezone": "^0.5.28",
+    "moment-timezone": "^0.5.35",
     "pngjs": "^4.0.0"
   }
 }
